@@ -1,0 +1,16 @@
+{
+  "name": "Springfield",
+  "description": "Developer Assignment",
+  "repository": "https://github.com/mark-walle/springfield",
+  "success_url": "/",
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [
+    "mongolab",
+    "papertrail"
+  ]
+}
