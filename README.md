@@ -1,5 +1,11 @@
 # Springfield
 
+Visit the demo hosted at https://limitless-lowlands-10205.herokuapp.com/
+
+The Springfield server is build on the MEAN stack using a RESTful API.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/chrisckchang/mean-contactlist-angular2)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
 ## Development server
