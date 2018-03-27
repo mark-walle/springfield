@@ -8,19 +8,19 @@
   <form class="col-md-12">
     <div class="form-group">
       <label for="contact-name">Name</label>
-      <input class="form-control" name="contact-name" [(ngModel)]="contact.name" placeholder="Name"/>
+      <input class="form-control" name="contact-name" [(ngModel)]="contact.name" placeholder="Homer Simpson"/>
     </div>
     <div class="form-group">
       <label for="contact-email">Email</label>
-      <input class="form-control" name="contact-email" [(ngModel)]="contact.email" placeholder="support@mlab.com"/>
+      <input class="form-control" name="contact-email" [(ngModel)]="contact.email" placeholder="hsimpson@springfield.com"/>
     </div>
     <div class="form-group">
-      <label for="contact-phone-mobile">Mobile</label>
-      <input class="form-control" name="contact-phone-mobile" [(ngModel)]="contact.phone.mobile" placeholder="1234567890"/>
+      <label for="contact-phone">Phone</label>
+      <input class="form-control" name="contact-phone" [(ngModel)]="contact.phone" placeholder="(636) 555-7666"/>
     </div>
     <div class="form-group">
-      <label for="contact-phone-work">Work</label>
-      <input class="form-control" name="contact-phone-work" [(ngModel)]="contact.phone.work" placeholder="0123456789"/>
+      <label for="contact-address">Phone</label>
+      <input class="form-control" name="contact-address" [(ngModel)]="contact.address" placeholder="742 Evergreen Terrace"/>
     </div>
     <button class="btn btn-primary" *ngIf="!contact._id" (click)="createContact(contact)">Create</button>
     <button class="btn btn-info" *ngIf="contact._id" (click)="updateContact(contact)">Update</button>
