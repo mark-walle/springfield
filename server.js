@@ -40,7 +40,7 @@ function handleError(res, reason, message, code) {
     res.status(code || 500).json({"error": message});
   }
 
-  app.all("/api/contacts/*", function (req, res, next) {
+  app.all("/api/*", function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Cache-Control, Pragma, Origin, Authorization, Content-Type, X-Requested-With");
     res.header("Access-Control-Allow-Methods", "GET, PUT, POST");
