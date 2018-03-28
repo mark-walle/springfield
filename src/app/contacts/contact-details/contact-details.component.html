@@ -8,19 +8,19 @@
   <form class="col-md-12">
     <div class="form-group">
       <label for="contact-name">Name</label>
-      <input class="form-control" name="contact-name" [(ngModel)]="contact.name" placeholder="Homer Simpson"/>
+      <input class="form-control" name="contact-name" [(ngModel)]="contact.name" placeholder="Your Name"/>
     </div>
     <div class="form-group">
       <label for="contact-email">Email</label>
-      <input class="form-control" name="contact-email" [(ngModel)]="contact.email" placeholder="hsimpson@springfield.com"/>
+      <input class="form-control" name="contact-email" [(ngModel)]="contact.email" placeholder="name@domain.com"/>
     </div>
     <div class="form-group">
       <label for="contact-phone">Phone</label>
-      <input class="form-control" name="contact-phone" [(ngModel)]="contact.phone" placeholder="(636) 555-7666"/>
+      <input class="form-control" name="contact-phone" [(ngModel)]="contact.phone" placeholder="(123) 456-7890"/>
     </div>
     <div class="form-group">
       <label for="contact-address">Mailing Address</label>
-      <input class="form-control" name="contact-address" [(ngModel)]="contact.address" placeholder="742 Evergreen Terrace"/>
+      <input class="form-control" name="contact-address" [(ngModel)]="contact.address" placeholder="Your mailing address"/>
     </div>
     <button class="btn btn-primary" *ngIf="!contact._id" (click)="createContact(contact)">Create</button>
     <button class="btn btn-info" *ngIf="contact._id" (click)="updateContact(contact)">Update</button>

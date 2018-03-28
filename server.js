@@ -40,6 +40,9 @@ function handleError(res, reason, message, code) {
     res.status(code || 500).json({"error": message});
   }
 
+  // I had a problem getting app-router.module working as it should.
+  // This stub allows access control from any origin.
+  // I am assuming that work could be done in the next sprint.
   app.all("/api/*", function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Cache-Control, Pragma, Origin, Authorization, Content-Type, X-Requested-With");
