@@ -7,9 +7,9 @@ import { ContactDetailsComponent } from './contacts/contact-details/contact-deta
 const routes: Routes = [
   // { path: '', redirectTo: '/form', pathMatch: 'full' },
   // { path: 'form', component: DashboardComponent },
-  { path: '', redirectTo: 'admin', pathMatch: 'full' },
-  { path: 'admin', component: ContactListComponent },
-  { path: 'form', component: ContactDetailsComponent }
+  { path: '' },
+  // { path: 'admin', component: ContactListComponent },
+  // { path: 'form', component: ContactDetailsComponent }
 ];
 
 @NgModule({
